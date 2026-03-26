@@ -28,7 +28,7 @@ public class Addition
 	}
 
 	[TestMethod] //subtract
-	public void Add_Valid_Patino()
+	public void Sub_Valid_Patino()
 	{
 		Assert.AreEqual(3, Program.Subtract("1", "2"));
 		Assert.AreEqual(5, Program.Subtract("3", "2"));
@@ -36,7 +36,7 @@ public class Addition
 	}
 
 	[TestMethod]
-	public void Add_Invalid_Patino()
+	public void Sub_Invalid_Patino()
 	{
 		Assert.ThrowsException<FormatException>(() => Program.Subtract("1", "a"));
 		Assert.ThrowsException<FormatException>(() => Program.Subtract("a", "1"));
@@ -44,7 +44,7 @@ public class Addition
 	}
 
 	[TestMethod]
-	public void Add_Null_Patino()
+	public void Sub_Null_Patino()
 	{
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Subtract("1", null));
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Subtract(null, "1"));
@@ -52,7 +52,7 @@ public class Addition
 	}
 
 	[TestMethod] //multiply
-	public void Add_Valid_Patino()
+	public void Mul_Valid_Patino()
 	{
 		Assert.AreEqual(3, Program.Multiply("1", "2"));
 		Assert.AreEqual(5, Program.Multiply("3", "2"));
@@ -60,7 +60,7 @@ public class Addition
 	}
 
 	[TestMethod]
-	public void Add_Invalid_Patino()
+	public void Mul_Invalid_Patino()
 	{
 		Assert.ThrowsException<FormatException>(() => Program.Multiply("1", "a"));
 		Assert.ThrowsException<FormatException>(() => Program.Multiply("a", "1"));
@@ -68,7 +68,7 @@ public class Addition
 	}
 
 	[TestMethod]
-	public void Add_Null_Patino()
+	public void Mul_Null_Patino()
 	{
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply("1", null));
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply(null, "1"));
@@ -76,7 +76,7 @@ public class Addition
 	}
 
 	[TestMethod] //divide
-	public void Add_Valid_Patino()
+	public void Div_Valid_Patino()
 	{
 		Assert.AreEqual(3, Program.Divide("1", "2"));
 		Assert.AreEqual(5, Program.Divide("3", "2"));
@@ -84,7 +84,7 @@ public class Addition
 	}
 
 	[TestMethod]
-	public void Add_Invalid_Patino()
+	public void Div_Invalid_Patino()
 	{
 		Assert.ThrowsException<FormatException>(() => Program.Divide("1", "a"));
 		Assert.ThrowsException<FormatException>(() => Program.Divide("a", "1"));
@@ -92,7 +92,7 @@ public class Addition
 	}
 
 	[TestMethod]
-	public void Add_Null_Patino()
+	public void Div_Null_Patino()
 	{
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Divide("1", null));
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, "1"));
@@ -100,7 +100,7 @@ public class Addition
 	}
 
 	[TestMethod] //power
-	public void Add_Valid_Patino()
+	public void Pow_Valid_Patino()
 	{
 		Assert.AreEqual(3, Program.Power("1", "2"));
 		Assert.AreEqual(5, Program.Power("3", "2"));
@@ -108,7 +108,7 @@ public class Addition
 	}
 
 	[TestMethod]
-	public void Add_Invalid_Patino()
+	public void Pow_Invalid_Patino()
 	{
 		Assert.ThrowsException<FormatException>(() => Program.Power("1", "a"));
 		Assert.ThrowsException<FormatException>(() => Program.Power("a", "1"));
@@ -116,7 +116,7 @@ public class Addition
 	}
 
 	[TestMethod]
-	public void Add_Null_Patino()
+	public void Pow_Null_Patino()
 	{
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Power("1", null));
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Power(null, "1"));
