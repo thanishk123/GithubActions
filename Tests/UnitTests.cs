@@ -78,9 +78,9 @@ public class Addition
 	[TestMethod] //divide
 	public void Div_Valid_Patino()
 	{
-		Assert.AreEqual(1/2, Program.Divide("1", "2"));
-		Assert.AreEqual(3/2, Program.Divide("3", "2"));
-		Assert.AreEqual(7/5, Program.Divide("5", "7"));
+		Assert.AreEqual(0, Program.Divide("1", "2"));
+		Assert.AreEqual(1, Program.Divide("3", "2"));
+		Assert.AreEqual(0, Program.Divide("5", "7"));
 	}
 
 	[TestMethod]
